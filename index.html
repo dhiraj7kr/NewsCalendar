@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App</title>
+    <link rel="icon" href="./img/file (2).png" type="image/icon type">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-container">
+        <div class="logo">Calendar</div>
+        <nav class="nav-bar">
+            <a href="#" id="todo-link">ToDo</a>
+            <a href="#" id="notes-link">Notes</a>
+            <a href="#" id="quotes-link">Quotes</a>
+            <button class="login-button">Login</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="left-side">
+            <!-- Calendar -->
+            <section class="calendar">
+                <div class="calendar-header">
+                    <button id="prev-month">&lt;</button>
+                    <span id="month-year"></span>
+                    <button id="next-month">&gt;</button>
+                </div>
+                <table id="calendar-table">
+                    <!-- Calendar Days will be inserted here -->
+                </table>
+            </section>
+
+            <!-- To-Do Section -->
+            <section class="todo-section" id="todo-section" style="display:none;">
+                <h2>To-Do List</h2>
+                <input type="text" id="todo-input" placeholder="Add a new task...">
+                <button id="add-todo">Add Task</button>
+                <div id="todo-list">
+                    <!-- Tasks will be inserted here -->
+                </div>
+            </section>
+
+            <!-- Quotes Section -->
+            <section class="quotes-section" id="quotes-section" style="display:none;">
+                <div class="quote-box">
+                    <p class="quote-text">"The only limit to our realization of tomorrow is our doubts of today."</p>
+                    <p class="quote-author">- Franklin D. Roosevelt</p>
+                </div>
+                <div class="quote-box">
+                    <p class="quote-text">"Life is what happens when you're busy making other plans."</p>
+                    <p class="quote-author">- John Lennon</p>
+                </div>
+                <div class="quote-box">
+                    <p class="quote-text">"The best way to predict the future is to invent it."</p>
+                    <p class="quote-author">- Alan Kay</p>
+                </div>
+            </section>
+            
+
+            
+        </div>
+
+        <div class="right-side">
+            <!-- News Section -->
+            <!-- News Section -->
+<!-- News Section -->
+<section class="news-section" id="news-section">
+    <h2>Today's News</h2>
+    <div id="startup-news">
+        <h3>Startup News</h3>
+        <div id="startup-news-list">
+            <!-- Startup news items will be inserted here -->
+        </div>
+    </div>
+    <div id="tech-news">
+        <h3>Tech News</h3>
+        <div id="tech-news-list">
+            <!-- Tech news items will be inserted here -->
+        </div>
+    </div>
+</section>
+
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer-logo">Calendar</div>
+        <div class="footer-copyright">© 2024 Calendar Inc. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
